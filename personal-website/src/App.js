@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from 'react-router-dom';
 import NavBar from './components/navbar';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
 		<NavBar />
-		<div className="Test-div">Hello world.</div>
+		<main>
+			Main content.
+		</main>
     </div>
   );
 }

@@ -1,0 +1,32 @@
+.app {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: lavenderblush;
+	font-weight: 400;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li {
+		display: block;
+		float: left;
+		text-align: center;
+		padding: 10px 15px;
+		text-decoration: none;
+	}
+}
+
+
+main {
+	padding: 20px;
+}

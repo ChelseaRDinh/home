@@ -6,7 +6,11 @@ class NavBar extends Component {
 			<React.Fragment>
 				<header>
 					<nav className="navbar">
-						NavBar text placeholder.
+						<ul>
+							<li>About</li>
+							<li>Projects</li>
+							<li>Contact</li>
+						</ul>
 					</nav>
 				</header>
 			</React.Fragment>
