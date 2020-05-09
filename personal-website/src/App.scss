@@ -7,22 +7,34 @@
 .navbar {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: lavenderblush;
+	background-color: lightcoral;
+	color: white;
 	font-weight: 400;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
 
 	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
 	}
 
 	li {
 		display: block;
-		float: left;
-		text-align: center;
-		padding: 10px 15px;
-		text-decoration: none;
+	}
+
+	li a {
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 10px 15px;
+			text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+		background-color: coral;
 	}
 }
 
