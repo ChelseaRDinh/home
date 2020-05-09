@@ -1,13 +1,23 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	padding: 20px;
+	margin-top: 80px;
+}
+
 .app {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 }
 
-
 .navbar {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: lightcoral;
+	background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
 	color: white;
 	font-weight: 400;
 	top: 0;
@@ -15,31 +25,30 @@
 	overflow: hidden;
 	position: fixed;
 
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-
 	li {
 		display: block;
 	}
-
-	li a {
-			float: left;
-			color: white;
-			text-align: center;
-			padding: 10px 15px;
-			text-decoration: none;
-	}
-
-	li a:hover:not(.active) {
-		background-color: coral;
-	}
 }
 
+.navbar__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
-main {
-	padding: 20px;
-	margin-top: 80px;
+.navbar__links,
+.navbar-logo {
+		float: right;
+		color: white;
+		text-align: center;
+		padding: 10px 15px;
+		text-decoration: none;
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	cursor: pointer;
+	font-size: 24px;
 }
