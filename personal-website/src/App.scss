@@ -17,8 +17,11 @@ Color Palette:
 main {
 	padding: 20px;
 	margin-top: 80px;
+}
+
+body {
 	color: #3A405a;
-	font-family: 'Montserrat', sans-serif;
+	font-family: MerriweatherSans;
 }
 
 .app {
@@ -120,6 +123,12 @@ main {
 		margin: 20px;
 		font-size: 20px;
 	}
+}
+
+.full-name {
+	font-size: 42px;
+	margin-bottom: 20px;
+	font-family: YesevaOne;
 }
 
 @keyframes fadein {
