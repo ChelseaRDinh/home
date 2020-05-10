@@ -17,6 +17,12 @@ Color Palette:
 main {
 	padding: 20px;
 	margin-top: 80px;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
 body {
@@ -41,18 +47,18 @@ body {
 	width: 100%;
 	overflow: hidden;
 	position: fixed;
-}
-
-.navbar-list {
-	list-style-type: none;
-	display: none;
-	font-size: 18px;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+}
+
+.navbar-list {
+	list-style-type: none;
+	display: none;
+	font-size: 18px;
 }
 
 .navbar-links,
@@ -143,12 +149,27 @@ body {
 	margin-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
+	line-height: 20px;
 }
 
 .content-divider {
 	border: 1px dashed #37424A;
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.social-media-icon {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.social-media-link {
+	color: #685044
+}
+
+.social-media-link:hover {
+	color: #b8b8ff;
 }
 
 @keyframes fadein {

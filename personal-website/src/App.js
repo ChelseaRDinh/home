@@ -9,6 +9,8 @@ import {
 import NavBar from './components/navbar';
 import './App.scss';
 import brandImage from './assets/brand_image.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
 					<h1 className="full-name">Chelsea Dinh</h1>
 					<hr className="content-divider" />
 					<div className="content-body">
+						<p><strong>Hi there, content is coming soon! :)</strong></p>
+
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec felis ac velit euismod elementum. Cras tincidunt est non nunc viverra imperdiet a ut erat. Donec vehicula nisi in metus auctor sollicitudin. Cras convallis posuere ante sed ultrices. Nam sed urna magna. Aenean maximus non dui cursus pretium. Aliquam vel accumsan tellus, et sodales lacus. In mi mi, efficitur vitae varius eu, dignissim sit amet massa. Donec pulvinar auctor nunc. In nec fermentum nibh. Quisque ut suscipit quam. Sed volutpat congue venenatis.
 
 						In dictum dui semper cursus sollicitudin. Aliquam consequat, diam et consequat sollicitudin, urna est lobortis ipsum, nec volutpat est nisl in ligula. Duis malesuada est ligula, quis fringilla odio mollis in. Curabitur efficitur, purus vehicula gravida ultricies, neque velit mattis lorem, eleifend varius orci sapien a ex. Cras at vestibulum ligula, sed blandit sem. Praesent scelerisque velit at urna imperdiet viverra. Aenean non fermentum magna. Mauris a placerat dui. Proin finibus aliquam pellentesque.
@@ -34,6 +38,17 @@ function App() {
 						Phasellus sed bibendum risus, sit amet rutrum dui. Praesent venenatis gravida leo, ac rhoncus dui iaculis eu. Curabitur id fermentum magna. Fusce semper enim et sem luctus gravida. Ut pretium turpis et porttitor iaculis. Nulla feugiat justo et purus dignissim maximus. Mauris id mauris quam. Quisque et metus sed massa blandit sagittis. Ut sagittis sem eget nibh bibendum convallis. In scelerisque mi est, non viverra tortor cursus sed. Aenean varius sed ante id dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum tellus urna, laoreet quis odio in, auctor placerat metus.
 					</div>
 					<hr className="content-divider" />
+					<div className="social-media-links">
+						<span className="social-media-icon">
+							<a className="social-media-link" target="_blank" href="https://www.facebook.com/chelsearhdinh/"><FontAwesomeIcon icon={faFacebookF} /></a>
+						</span>
+						<span className="social-media-icon">
+							<a className="social-media-link" target="_blank" href="https://github.com/chelseardinh"><FontAwesomeIcon icon={faGithub} /></a>
+						</span>
+						<span className="social-media-icon">
+							<a className="social-media-link" target="_blank" href="https://www.linkedin.com/in/chelseardinh/"><FontAwesomeIcon icon={faLinkedin} /></a>
+						</span>
+					</div>
 				</div>
 			</body>
 		</main>
