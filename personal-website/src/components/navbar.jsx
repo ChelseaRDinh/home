@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCoffee, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class NavBar extends Component {
@@ -15,24 +15,29 @@ class NavBar extends Component {
 
 		navbarToggle.addEventListener('click', () => {
 			navbarList.classList.toggle('active');
+			navbarToggle.classList.toggle('active');
 		});
 	}
 
 	render() {
 		return (
-			<div className="navbar">
-				<nav>
-					<span className="navbar-toggle" id="js-navbar-toggle" onClick={this.toggleMenu}>
-						<FontAwesomeIcon icon={faBars} />
-					</span>
-					<a href='#' className="navbar-logo">logo</a>
-					<ul className="navbar__list" id="js-navbar__list">
-						<li><a className="navbar__links" href="#About">About</a></li>
-						<li><a className="navbar__links" href="#Projects">Projects</a></li>
-						<li><a className="navbar__links" href="#Contact">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
+			<nav className="navbar">
+				<div className="navbar-toggle" id="js-navbar-toggle" onClick={this.toggleMenu}>
+					<div class="bar-one"></div>
+					<div class="bar-two"></div>
+					<div class="bar-three"></div>
+					{/* <span className="hamburger-menu" id="js-hamburger-menu"><FontAwesomeIcon icon={faBars} /></span>
+					<span className="close-button" id="js-close-button"><FontAwesomeIcon icon={faTimes} /></span> */}
+				</div>
+				<a href='#' className="navbar-logo">
+					<FontAwesomeIcon icon={faCoffee} />
+				</a>
+				<ul className="navbar-list" id="js-navbar__list">
+					<li><a className="navbar-links" href="#About">About</a></li>
+					<li><a className="navbar-links" href="#Projects">Projects</a></li>
+					<li><a className="navbar-links" href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
 		);
 	}
 }
