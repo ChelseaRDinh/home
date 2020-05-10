@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { faBars, faCoffee, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class NavBar extends Component {
@@ -26,11 +26,9 @@ class NavBar extends Component {
 					<div class="bar-one"></div>
 					<div class="bar-two"></div>
 					<div class="bar-three"></div>
-					{/* <span className="hamburger-menu" id="js-hamburger-menu"><FontAwesomeIcon icon={faBars} /></span>
-					<span className="close-button" id="js-close-button"><FontAwesomeIcon icon={faTimes} /></span> */}
 				</div>
 				<a href='#' className="navbar-logo">
-					<FontAwesomeIcon icon={faCoffee} />
+					<FontAwesomeIcon icon={faHeart} />
 				</a>
 				<ul className="navbar-list" id="js-navbar__list">
 					<li><a className="navbar-links" href="#About">About</a></li>
