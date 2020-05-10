@@ -22,6 +22,7 @@ main {
 body {
 	color: #3A405a;
 	font-family: MerriweatherSans;
+	background-color: #f9fbf2;
 }
 
 .app {
@@ -135,6 +136,19 @@ body {
 	font-size: 42px;
 	margin-bottom: 20px;
 	font-family: YesevaOne;
+}
+
+.content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.content-divider {
+	border: 1px dashed #37424A;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 @keyframes fadein {
