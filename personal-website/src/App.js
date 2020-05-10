@@ -18,9 +18,9 @@ function App() {
 		<header>
 			<NavBar />
 		</header>
-		<main>
+		<body>
+			<main>
 			{/* <img className="brand-img" src={brandImage} alt="brand image" /> */}
-			<body>
 				<div className="content">
 					<h1 className="full-name">Chelsea Dinh</h1>
 					<hr className="content-divider" />
@@ -50,8 +50,8 @@ function App() {
 						</span>
 					</div>
 				</div>
-			</body>
-		</main>
+			</main>
+		</body>
     </div>
   );
 }

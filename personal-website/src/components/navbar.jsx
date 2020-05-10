@@ -23,9 +23,9 @@ class NavBar extends Component {
 		return (
 			<nav className="navbar">
 				<div className="navbar-toggle" id="js-navbar-toggle" onClick={this.toggleMenu}>
-					<div class="bar-one"></div>
-					<div class="bar-two"></div>
-					<div class="bar-three"></div>
+					<div className="bar-one"></div>
+					<div className="bar-two"></div>
+					<div className="bar-three"></div>
 				</div>
 				<a href='#' className="navbar-logo">
 					<FontAwesomeIcon icon={faHeart} />
