@@ -36,9 +36,9 @@ class NavBar extends Component {
 					<div className="bar-two"></div>
 					<div className="bar-three"></div>
 				</div>
-				<a href='#' className="navbar-logo">
+				<NavLink className="navbar-logo" to="/" exact>
 					<img className="navbar-logo__img" src={navbarLogo} />
-				</a>
+				</NavLink>
 				<ul className="navbar-list" id="js-navbar__list">
 					<li className="navbar-links" onClick={this.closeMenu}>
 						<NavLink className="navbar-links" to="/about">About</NavLink>
