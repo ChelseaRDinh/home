@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -31,9 +30,7 @@ class NavBar extends Component {
 					<FontAwesomeIcon icon={faHeart} />
 				</a>
 				<ul className="navbar-list" id="js-navbar__list">
-					<li><a className="navbar-links" href="#About">About</a></li>
-					<li><a className="navbar-links" href="#Projects">Projects</a></li>
-					<li><a className="navbar-links" href="#Contact">Contact</a></li>
+					{this.props.children}
 				</ul>
 			</nav>
 		);

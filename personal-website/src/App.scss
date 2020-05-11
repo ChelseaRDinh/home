@@ -17,6 +17,7 @@ Color Palette:
 .app {
 	padding-top: 100px;
 	background-color: #FBF7F4;
+	height: 100vh;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -55,6 +56,7 @@ Color Palette:
 .navbar-links li {
 	text-align: center;
 	margin: 15px auto;
+	cursor: pointer;
 }
 
 .navbar-links:hover {
