@@ -15,7 +15,8 @@ Color Palette:
 }
 
 .app {
-	margin-top: 100px;
+	padding-top: 100px;
+	background-color: #FBF7F4;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -126,10 +127,10 @@ Color Palette:
 .content {
 	padding-left: 20px;
 	padding-right: 20px;
-	line-height: 20px;
+	line-height: 25px;
 	text-align: center;
+	font-family: 'Cambria', sans-serif;
 	color: #37424A;
-	font-family: 'Merriweather Sans', sans-serif;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -141,7 +142,9 @@ Color Palette:
 .full-name {
 	font-size: 32px;
 	margin-bottom: 20px;
-	font-family: 'Yeseva One', cursive;
+	letter-spacing: 1px;
+	color: #eb7b5b;
+	font-family: 'Shrikhand', cursive;
 }
 
 .content-divider {
@@ -160,7 +163,7 @@ Color Palette:
 }
 
 .social-media-link {
-	color: #b8b8ff;
+	color: #ba5a31;
 }
 
 .social-media-link:hover {
