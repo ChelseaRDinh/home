@@ -8,7 +8,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<div className="projects">
-				Our projects.
+				Projects page. Coming soon!
 			</div>
 		);
 	}
