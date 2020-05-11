@@ -14,17 +14,7 @@ function App() {
 	<Router>
 		<div className="app">
 			<header>
-				<NavBar>
-					<li className="navbar-links">
-						<NavLink className="navbar-links" to="/about">About</NavLink>
-					</li>
-					<li className="navbar-links">
-						<NavLink className="navbar-links" to="/projects">Projects</NavLink>
-					</li>
-					<li className="navbar-links">
-						<NavLink className="navbar-links" to="/contact">Contact</NavLink>
-					</li>
-				</NavBar>
+				<NavBar />
 			</header>
 			<div className="content">
 				<Switch>
