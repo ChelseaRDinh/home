@@ -61,7 +61,7 @@ Color Palette:
 	display: inline-block;
 	font-size: 20px;
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 15px;
 	float: left;
 }
 
@@ -202,6 +202,18 @@ Color Palette:
 		margin-right: 30px;
 		flex-direction: row;
 		justify-content: flex-end;
+	}
+
+	.navbar-list.active {
+		li {
+			margin: 0;
+			font-size: 18px;
+		}
+	}
+
+	.navbar-list.active {
+		margin-top: 0;
+		height: auto;
 	}
 
 	.navbar-list li {
