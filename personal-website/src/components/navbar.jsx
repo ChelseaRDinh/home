@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavLink, BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import  navbarLogo from '../assets/navbar_logo.png';
 
 class NavBar extends Component {
 	constructor(props) {
@@ -37,7 +37,7 @@ class NavBar extends Component {
 					<div className="bar-three"></div>
 				</div>
 				<a href='#' className="navbar-logo">
-					<FontAwesomeIcon icon={faHeart} />
+					<img className="navbar-logo__img" src={navbarLogo} />
 				</a>
 				<ul className="navbar-list" id="js-navbar__list">
 					<li className="navbar-links" onClick={this.closeMenu}>

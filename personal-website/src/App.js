@@ -19,10 +19,10 @@ function App() {
 			<div className="content">
 				<Switch>
 					<Route path="/" exact >
-						<h1 className="full-name">Chelsea Dinh</h1>
+						<h1 className="full-name">Hello, I'm Chelsea!</h1>
 						<hr className="content-divider" />
 						<div className="content-body">
-							<p><strong>Hi there, content is coming soon! :)</strong></p>
+							<p><strong>Real content is coming soon!</strong></p>
 
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec felis ac velit euismod elementum. Cras tincidunt est non nunc viverra imperdiet a ut erat. Donec vehicula nisi in metus auctor sollicitudin. Cras convallis posuere ante sed ultrices. Nam sed urna magna. Aenean maximus non dui cursus pretium. Aliquam vel accumsan tellus, et sodales lacus. In mi mi, efficitur vitae varius eu, dignissim sit amet massa. Donec pulvinar auctor nunc. In nec fermentum nibh. Quisque ut suscipit quam. Sed volutpat congue venenatis.
 

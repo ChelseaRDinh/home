@@ -65,9 +65,13 @@ Color Palette:
 	float: left;
 }
 
+.navbar-logo__img {
+	width: 30px;
+}
+
 .navbar-toggle {
 	position: absolute;
-	top: 25px;
+	top: 30px;
 	right: 20px;
 	cursor: pointer;
 }
@@ -109,7 +113,7 @@ Color Palette:
 }
 
 .navbar-list.active {
-	margin-top: 60px;
+	margin-top: 80px;
 	height: 100vh;
 }
 
@@ -138,7 +142,7 @@ Color Palette:
 }
 
 .content-divider {
-	border: 1px dashed #37424A;
+	border: 1px dashed #ba5a31;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
@@ -153,12 +157,13 @@ Color Palette:
 }
 
 .social-media-link {
-	color: #ba5a31;
+	color: #37424a;
 }
 
 .social-media-link:hover {
 	color: #e9afa3;
 }
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -228,6 +233,10 @@ Color Palette:
 		margin-top: 0;
 		margin-left: 15px;
 		float: none;
+	}
+
+	.navbar-logo__img {
+		width: 40px;
 	}
 
 	.navbar-toggle {
