@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './fonts/YesevaOne-Regular.ttf'
-import './fonts/MerriweatherSans-Regular.ttf'
+import WebFont from 'webfontloader';
+
+WebFont.load({
+	google: {
+		families: ['Merriweather Sans:300,400,700', 'sans-serif']	
+	}
+});
 
 ReactDOM.render(
   <React.StrictMode>

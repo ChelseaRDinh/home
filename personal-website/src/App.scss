@@ -14,25 +14,14 @@ Color Palette:
 	margin: 0;
 }
 
-main {
-	padding: 20px;
-	margin-top: 80px;
+.app {
+	margin-top: 100px;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
-}
-
-body {
-	color: #3A405a;
-	font-family: MerriweatherSans;
-	background-color: #f9fbf2;
-}
-
-.app {
-	text-align: center;
 }
 
 .navbar {
@@ -47,18 +36,13 @@ body {
 	width: 100%;
 	overflow: hidden;
 	position: fixed;
-
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
 }
 
 .navbar-list {
-	list-style-type: none;
 	display: none;
+	list-style-type: none;
 	font-size: 18px;
+	text-align: center;
 }
 
 .navbar-links,
@@ -79,8 +63,9 @@ body {
 .navbar-logo {
 	display: inline-block;
 	font-size: 20px;
-	margin-top: 15px;
-	margin-left: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
 }
 
 .navbar-toggle {
@@ -128,7 +113,7 @@ body {
 }
 
 .navbar-list.active {
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 .navbar-list.active {
@@ -138,18 +123,25 @@ body {
 	}
 }
 
-.full-name {
-	font-size: 42px;
-	margin-bottom: 20px;
-	font-family: YesevaOne;
-}
-
 .content {
-	margin-top: 20px;
-	margin-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 	line-height: 20px;
+	text-align: center;
+	color: #37424A;
+	font-family: 'Merriweather Sans', sans-serif;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.full-name {
+	font-size: 32px;
+	margin-bottom: 20px;
+	font-family: 'Yeseva One', cursive;
 }
 
 .content-divider {
@@ -159,9 +151,12 @@ body {
 }
 
 .social-media-icon {
-	margin-left: 10px;
-	margin-right: 10px;
-	font-size: 20px;
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 40px;
 }
 
 .social-media-link {
@@ -227,9 +222,21 @@ body {
 	.navbar-logo {
 		margin-top: 0;
 		margin-left: 15px;
+		float: none;
 	}
 
 	.navbar-toggle {
 		display: none;
+	}
+
+	.full-name {
+		font-size: 42px;
+	}
+
+	.social-media-icon {
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 20px;
 	}
 }
