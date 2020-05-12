@@ -8,7 +8,8 @@ class About extends Component {
 	render() {
 		return (
 			<div className="about">
-				About page. Coming soon!
+				<p>I am a recent Computer Science Undergraduate from the University of Victoria!</p>
+				<p>I am passionate about web development and building rich, colorful UIs.</p>
 			</div>
 		);
 	}
