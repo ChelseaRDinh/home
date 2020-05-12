@@ -30,6 +30,7 @@ function App() {
 					<Route path="/projects" component={Projects} />
 					<Route path="/contact" component={Contact} />
 				</Switch>
+				<p>Let's connect!</p>
 				<div className="social-media-links">
 					<span className="social-media-icon">
 						<a className="social-media-link" target="_blank" href="https://www.facebook.com/chelsearhdinh/"><FontAwesomeIcon icon={faFacebookF} /></a>
