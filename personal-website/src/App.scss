@@ -152,6 +152,13 @@ Color Palette:
 		font-size: 16px;
 		font-family: 'Lora, sans-serif';
 	}
+
+	input, textarea {
+		&:focus {
+			outline-color: #e9afa3;
+			outline-width: 1px;
+		}
+	}
 	
 	input {
 		height: 30px;

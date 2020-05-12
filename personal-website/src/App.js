@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import NavBar from './components/navbar';
 import './App.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { NavLink, BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import About from './components/about';
 import Projects from './components/projects';
@@ -33,7 +33,7 @@ function App() {
 				<p>Let's connect!</p>
 				<div className="social-media-links">
 					<span className="social-media-icon">
-						<a className="social-media-link" target="_blank" href="https://www.facebook.com/chelsearhdinh/"><FontAwesomeIcon icon={faFacebookF} /></a>
+						<a className="social-media-link" target="_blank" href="https://www.instagram.com/chelsearhdinh/"><FontAwesomeIcon icon={faInstagram} /></a>
 					</span>
 					<span className="social-media-icon">
 						<a className="social-media-link" target="_blank" href="https://github.com/chelseardinh"><FontAwesomeIcon icon={faGithub} /></a>
