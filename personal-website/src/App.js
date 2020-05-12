@@ -17,19 +17,19 @@ function App() {
 				<NavBar />
 			</header>
 			<div className="content">
-						<hr className="content-divider" />
 				<Switch>
 					<Route path="/" exact >
-						<div className="content-body">
-							<h1 className="full-name">Hello, I'm Chelsea!</h1>
-							<p>Real content is coming soon!</p>
+						<div className="home slide-up">
+							<hr className="content-divider" />
+								<h1 className="full-name">Hello, I'm Chelsea!</h1>
+								<p>Real content is coming soon!</p>
 						</div>
+						<hr className="content-divider" />
 					</Route>
 					<Route path="/about" component={About} />
 					<Route path="/projects" component={Projects} />
 					<Route path="/contact" component={Contact} />
 				</Switch>
-						<hr className="content-divider" />
 				<div className="social-media-links">
 					<span className="social-media-icon">
 						<a className="social-media-link" target="_blank" href="https://www.facebook.com/chelsearhdinh/"><FontAwesomeIcon icon={faFacebookF} /></a>

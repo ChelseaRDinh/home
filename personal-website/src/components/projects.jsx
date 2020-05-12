@@ -7,8 +7,10 @@ class Projects extends Component {
 
 	render() {
 		return (
-			<div className="projects">
+			<div className="projects slide-up">
+				<hr className="content-divider" />
 				Projects page. Coming soon!
+				<hr className="content-divider" />
 			</div>
 		);
 	}
