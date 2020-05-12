@@ -2,76 +2,67 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 class Contact extends Component {
-	constructor(props) {
-		super(props);
+
+	constructor() {
+		super();
 		this.state = {
 			name: '',
+			message: '',
 			email: '',
-			message: ''
+			sent: false,
+			buttonText: 'Send Message'
 		};
-		this.resetForm = this.resetForm.bind(this);
+
 		this.handleSubmit = this.handleSubmit.bind(this);
-		this.onNameChange = this.onNameChange.bind(this);
-		this.onEmailChange = this.onEmailChange.bind(this);
-		this.onMessageChange = this.onMessageChange.bind(this);
 	}
 
-	handleSubmit(e) {
+	handleSubmit = (e) => {
+		// Prevents default action of form class which causes page to reload.
 		e.preventDefault();
 
-		axios({
-			method: 'POST',
-			url: 'http://localhost:3002/send',
-			data: this.state
-		}).then(response => {
-			if (response.data.status === 'success') {
-				alert('Message sent.');
-				this.resetForm();
-			} else if (response.data.status === 'fail') {
-				alert('Message failed to send.');
-			}
-		}).catch(error => {
-			console.log(error);
+		this.setState({
+			buttonText: 'Sending...'
+		});
+
+		let data = {
+			name: this.state.name,
+			email: this.state.email,
+			message: this.state.message
+		};
+
+		axios.post('API_URI', data)
+		.then( res => {
+			this.setState({ sent: true }, this.resetForm());
+		}).catch( () => {
+			console.log('Message not sent.');
 		});
 	}
 
-	resetForm() {
+	resetForm = () => {
 		this.setState({
 			name: '',
+			message: '',
 			email: '',
-			message: ''
+			buttonText: 'Message sent!'
 		});
-	}
-
-	onNameChange(e) {
-		this.setState({name: e.target.value});
-	}
-
-	onEmailChange(e) {
-		this.setState({email: e.target.value});
-	}
-
-	onMessageChange(e) {
-		this.setState({message: e.target.value});
 	}
 
 	render() {
 		return (
 			<div className="contact">
-				<form id="contact-form" onSubmit={this.handleSubmit} method="POST">
-					<div className="form-group">
-						<label htmlFor="name">Name</label>
-						<input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange} />
+				<form className="contact-form" onSubmit={this.handleSubmit}>
+					<label className="message" htmlFor="message-input">Your Message</label>
+					<textarea onChange={e => this.setState({ message: e.target.value})} name="message" className="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
+
+					<label className="message-name" htmlFor="message-name">Your Name</label>
+					<input onChange={e => this.setState({ name: e.target.value})} name="name" className="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
+
+					<label className="message-email" htmlFor="message-email">Your Email</label>
+					<input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
+
+					<div className="button--container">
+						<button type="submit" className="button button-primary">{ this.state.buttonText }</button>
 					</div>
-					<div className="form-group">
-						<label htmlFor="email-address">Email Address</label>
-						<input type="email" className="form-control" id="email" value={this.state.email} onChange={this.onEmailChange} />
-					</div>
-					<div className="form-group">
-						<label htmlFor="message">Message</label>
-						<textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange} />
-					</div>
-					<button type="submit" className="btn btn-primary">Submit</button>
 				</form>
 			</div>
 		);
