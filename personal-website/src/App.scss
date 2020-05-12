@@ -237,6 +237,19 @@ h3, h4 {
 	animation: slide-up 1.5s;
 }
 
+.resume {
+	text-decoration: none;
+	color: #37424a;
+
+	&:visited {
+		color: #37424a;
+	}
+
+	&:hover {
+		color: #b8b8ff;
+	}
+}
+
 @keyframes slide-up {
 	from {
 		opacity: 0.25;

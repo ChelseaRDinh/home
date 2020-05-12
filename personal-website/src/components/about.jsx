@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Resume from '../resources/resume_2020.pdf';
 
 class About extends Component {
 	constructor(props) {
@@ -14,6 +15,7 @@ class About extends Component {
 				<p>My passions include web development; building rich, colorful UIs, and creating beautiful design.</p>
 				<h2>Education</h2>
 				<h2>Experience</h2>
+				<a className="resume" href={Resume} target="_blank"><h3>Check out my Resume</h3></a>
 				<hr className="content-divider" />
 			</div>
 		);
