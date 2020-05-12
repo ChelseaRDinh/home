@@ -112,6 +112,14 @@ Color Palette:
 	transform: rotate(45deg) translate(-6px, -8px);
 }
 
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
 .navbar-list.active {
 	margin-top: 80px;
 	height: 100vh;
@@ -121,6 +129,17 @@ Color Palette:
 	li {
 		margin: 20px;
 		font-size: 20px;
+	}
+}
+
+.contact-form {
+	input, textarea {
+		border: none;
+		padding: 10px;
+	}
+	
+	input {
+		height: 30px;
 	}
 }
 
@@ -145,6 +164,10 @@ Color Palette:
 	border: 1px dashed #e9afa3;
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.message-input {
+	height: 150px;
 }
 
 .social-media-icon {
