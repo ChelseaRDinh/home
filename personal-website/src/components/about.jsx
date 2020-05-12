@@ -13,8 +13,6 @@ class About extends Component {
 				<h2>About me</h2>
 				<p>I am a recent graduate from the University of Victoria where I received a Bachelor of Science in Computer Science.</p>
 				<p>My passions include web development; building rich, colorful UIs, and creating beautiful design.</p>
-				<h2>Education</h2>
-				<h2>Experience</h2>
 				<a className="resume" href={Resume} target="_blank"><h3>Check out my Resume</h3></a>
 				<hr className="content-divider" />
 			</div>

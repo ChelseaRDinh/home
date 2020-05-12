@@ -10,7 +10,7 @@ class Contact extends Component {
 			message: '',
 			email: '',
 			sent: false,
-			buttonText: 'Send Message'
+			buttonText: 'Submit'
 		};
 
 		this.handleSubmit = this.handleSubmit.bind(this);
