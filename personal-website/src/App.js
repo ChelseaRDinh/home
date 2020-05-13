@@ -33,13 +33,13 @@ function App() {
 				<p>Let's connect!</p>
 				<div className="social-media-links">
 					<span className="social-media-icon">
-						<a className="social-media-link" target="_blank" href="https://www.instagram.com/chelsearhdinh/"><FontAwesomeIcon icon={faInstagram} /></a>
+						<a className="social-media-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/chelsearhdinh/"><FontAwesomeIcon icon={faInstagram} /></a>
 					</span>
 					<span className="social-media-icon">
-						<a className="social-media-link" target="_blank" href="https://github.com/chelseardinh"><FontAwesomeIcon icon={faGithub} /></a>
+						<a className="social-media-link" target="_blank" rel="noopener noreferrer" href="https://github.com/chelseardinh"><FontAwesomeIcon icon={faGithub} /></a>
 					</span>
 					<span className="social-media-icon">
-						<a className="social-media-link" target="_blank" href="https://www.linkedin.com/in/chelseardinh/"><FontAwesomeIcon icon={faLinkedin} /></a>
+						<a className="social-media-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chelseardinh/"><FontAwesomeIcon icon={faLinkedin} /></a>
 					</span>
 				</div>
 			</div>
