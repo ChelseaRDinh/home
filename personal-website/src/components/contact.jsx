@@ -30,7 +30,8 @@ class Contact extends Component {
 			message: this.state.message
 		};
 
-		axios.post('https://vercel.com/chelseardinh/react-website-node-api/n9m2ie4aa', data)
+		//When testing locally uncomment below:
+		axios.post('http://localhost:4444/api/v1', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm());
 		}).catch( () => {
