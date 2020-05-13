@@ -30,7 +30,7 @@ class Contact extends Component {
 			message: this.state.message
 		};
 
-		axios.post('API_URI', data)
+		axios.post('https://vercel.com/chelseardinh/react-website-node-api/n9m2ie4aa', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm());
 		}).catch( () => {
