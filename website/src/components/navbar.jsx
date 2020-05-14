@@ -44,7 +44,7 @@ class NavBar extends Component {
 					<div className="bar-two"></div>
 					<div className="bar-three"></div>
 				</div>
-				<NavLink className="navbar-logo" id="js-navbar-logo" to="/" exact>
+				<NavLink className="navbar-logo" id="js-navbar-logo" to="/home" exact>
 					<img className="navbar-logo__img" src={navbarLogo} />
 				</NavLink>
 				<ul className="navbar-list" id="js-navbar__list">
