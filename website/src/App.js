@@ -18,7 +18,7 @@ function App() {
 			</header>
 			<div className="content">
 				<Switch>
-					<Route path="/" exact>
+					<Route path="/home" exact>
 						<div className="home slide-up">
 							<hr className="content-divider" />
 								<h1 className="full-name">Hello, I'm Chelsea!</h1>
