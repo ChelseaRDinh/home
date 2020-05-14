@@ -31,7 +31,7 @@ class Contact extends Component {
 		};
 
 		//When testing locally uncomment below:
-		axios.post('https://react-website-node-api.now.sh/', data)
+		axios.post('https://react-website-node-api-6mzswoq33.now.sh', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm());
 		}).catch( () => {
