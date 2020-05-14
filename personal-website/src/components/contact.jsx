@@ -58,7 +58,7 @@ class Contact extends Component {
 					<label className="message-email" htmlFor="message-email">Email</label>
 					<input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="message-email" type="email" placeholder="example@domain.com" required value={this.state.email} />
 
-					<label className="message" htmlFor="message-input">Your Message</label>
+					<label className="message" htmlFor="message-input">Message</label>
 					<textarea onChange={e => this.setState({ message: e.target.value})} name="message" className="message-input" type="text" placeholder="Message" value={this.state.message} required/>
 
 					<div className="button-container">
