@@ -23,6 +23,14 @@ class NavBar extends Component {
 	closeMenu() {
 		let navbarToggle = document.getElementById('js-navbar-toggle');
 		let navbarList = document.getElementById('js-navbar__list');
+		let logoButton = document.getElementById('js-navbar-logo');
+
+		logoButton.addEventListener('click', () => {
+			if (navbarToggle.classList.contains('active') && navbarList.classList.contains('active')) {
+				navbarToggle.classList.toggle('active');
+				navbarList.classList.toggle('active');
+			}
+		});
 
 		navbarToggle.classList.toggle('active');
 		navbarList.classList.toggle('active');
@@ -36,7 +44,7 @@ class NavBar extends Component {
 					<div className="bar-two"></div>
 					<div className="bar-three"></div>
 				</div>
-				<NavLink className="navbar-logo" to="/" exact>
+				<NavLink className="navbar-logo" id="js-navbar-logo" to="/" exact>
 					<img className="navbar-logo__img" src={navbarLogo} />
 				</NavLink>
 				<ul className="navbar-list" id="js-navbar__list">
