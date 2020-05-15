@@ -17,7 +17,6 @@ class Contact extends Component {
 	}
 
 	handleSubmit = (e) => {
-		// Prevents default action of form class which causes page to reload.
 		e.preventDefault();
 
 		this.setState({
@@ -30,7 +29,7 @@ class Contact extends Component {
 			message: this.state.message
 		};
 
-		axios.post('https://react-website-node-api-lkg3ex09o.now.sh', data)
+		axios.post('https://react-website-node-api.chelseardinh.now.sh/', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm());
 		}).catch( () => {
