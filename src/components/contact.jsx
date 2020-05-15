@@ -30,8 +30,6 @@ class Contact extends Component {
 			message: this.state.message
 		};
 
-		//When testing locally uncomment below:
-		//And modify user/pass in index.js for node api
 		axios.post('https://react-website-node-api-e3furdvzv.now.sh', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm());
