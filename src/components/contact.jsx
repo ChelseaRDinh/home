@@ -30,7 +30,7 @@ class Contact extends Component {
 			message: this.state.message
 		};
 
-		axios.post('https://react-website-node-api-e3furdvzv.now.sh', data)
+		axios.post('https://react-website-node-api-lkg3ex09o.now.sh', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm());
 		}).catch( () => {
