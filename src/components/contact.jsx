@@ -31,6 +31,8 @@ class Contact extends Component {
 		};
 
 		//When testing locally uncomment below:
+		//And modify user/pass in index.js for node api
+		// axios.post('http://localhost:80/api/v1', data)
 		axios.post('https://react-website-node-api-ragqh65nx.now.sh/api/v1', data)
 		.then( res => {
 			this.setState({ sent: true }, this.resetForm());
