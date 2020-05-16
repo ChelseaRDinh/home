@@ -14,10 +14,8 @@ class NavBar extends Component {
 		let navbarToggle = document.getElementById('js-navbar-toggle');
 		let navbarList = document.getElementById('js-navbar__list');
 
-		navbarToggle.addEventListener('click', () => {
-			navbarList.classList.toggle('active');
-			navbarToggle.classList.toggle('active');
-		});
+		navbarList.classList.toggle('active');
+		navbarToggle.classList.toggle('active');
 	}
 
 	closeMenu() {
