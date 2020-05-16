@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 class Contact extends Component {
-
 	constructor() {
 		super();
 		this.state = {
@@ -12,7 +11,6 @@ class Contact extends Component {
 			sent: false,
 			buttonText: 'Submit'
 		};
-
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
